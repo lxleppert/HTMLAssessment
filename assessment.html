@@ -36,13 +36,16 @@
   </p>
 
   <h2>TABLE</h2>
-  <table border="1" width="400">
+  <table border="1">
     <thead>
       <tr>
-        <th rowspan="2">Team Name</th>
+        <th rowspan="3">Team Name</th>
+        <td colspan="4">Scores by Quarter</td>
+        <th rowspan="3">Final</th>
+      </tr>
+      <tr>
         <th colspan="2">First Half</th>
         <th colspan="2">Second Half</th>
-        <th rowspan="2">Final</th>
       </tr>
       <tr>
         <th>Q1</th>
@@ -52,81 +55,119 @@
       </tr>
     </thead>
     <tr>
-      <td>Denver</td>
-      <td>7</td>
-      <td>3</td>
+      <td>Seattle</td>
       <td>0</td>
       <td>7</td>
-      <td>17</td>
+      <td>14</td>
+      <td>7</td>
+      <td>28</td>
     </tr>
     <tr>
-      <td>Chicago</td>
-      <td>3</td>
-      <td>3</td>
-      <td>0</td>
+      <td>San Fran</td>
       <td>7</td>
-      <td>13</td>
+      <td>0</td>
+      <td>6</td>
+      <td>8</td>
+      <td>21</td>
     </tr>
     <tfoot>
       <th>Total</th>
-      <th>10</th>
-      <th>6</th>
-      <th>0</th>
-      <th>14</th>
-      <th>30</th>
+      <th>17</th>
+      <th>7</th>
+      <th>20</th>
+      <th>15</th>
+      <th>49</th>
     </tfoot>
   </table>
 
   <h2>LIST</h2>
   <ul>
-    <a href="https://www.patriots.com/" New England Patriots>
-      <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/New_England_Patriots_logo.svg" width="150"
-        alt="New England Patriots logo">
-    </a>
-    <li><a href="https://www.patriots.com/" title="Link to the Patriots' homepage">New England Patriots</a>
-      <ul>
-        <li>QB
-          <ul>
-            <li>Tom Brady</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <a href="https://www.denverbroncos.com/" Denver Broncos>
-      <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg" width="125"
-        alt="Denver Broncos logo">
-    </a>
-    <li><a href="https://www.denverbroncos.com/" title="Link to the Bronco's homepage">Denver Broncos</a>
-      <ul>
-        <li>QB
-          <ul>
-            <li>Peyton Manning</li>
-            <li>Brock Ostweiler</li>
-          </ul>
-        </li>
+    <li>
+      <a href="https://www.seahawks.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Seattle_Seahawks_logo.svg" width="100"
+          alt="Seattle Seahawks logo">
+        <a href="https://www.seahawks.com/" title="Link to the Seattle's homepage">Seattle Seahawks</a>
+        <ul>
+          <li>QB
+            <ol>
+              <li>Drew Lock</li>
+              <li>Geno Smith</li>
+              <li>Jacob Eason</li>
+            </ol>
+          </li>
+        </ul>
+    </li><br>
+    <li>
+      <a href="https://www.49ers.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/San_Francisco_49ers_logo.svg" width="100"
+          alt="San Francisco 49ers logo">
+        <a href="https://www.49ers.com/" title="Link to the San Francisco's homepage">San Francisco 49ers</a>
+        <ul>
+          <li>QB
+            <ol>
+              <li>Jimmy Garoppolo</li>
+              <li>Trey Lance</li>
+              <li>Brock Purdy</li>
+              <li>Nate Sudfeld</li>
+            </ol>
+          </li>
+        </ul>
     </li>
   </ul>
 
   <h2>FORM</h2>
   <form>
-    First name: <input type="text" name="firstname">
-    Last name: <input type="text" name="lastname">
+    <section class="name">
+      <b><label for="firstname">First:</label></b>
+      <input type="text" id="firstname" name="firstname" value="Tommy"><br>
+      <b><label for="lastname">Last:</label></b>
+      <input type="text" id="lastname" name="lastname" value="The Cat">
+    </section>
 
-    <select>
-      <option value="broncos">Denver Broncos</option>
-      <option value="patriots">New England Patriots</option>
-    </select>
+    <section class="sport"><br>
+      <b><label for="sport">Favorite Sport:</label></b>
+      <select name="sport" id="sport">
+        <option value="skateboarding">Skateboarding</option>
+        <option value="snowboarding">Snowboarding</option>
+        <option value="mountain_biking">Mountain Biking</option>
+        <option value="motocross">Motocross</option>
+        <option value="motocross_fmx">Motocross FMX</option>
+        <option value="parkour">Parkour</option>
+        <option value="bungee_jumping">Bungee Jumping</option>
+      </select>
+    </section>
 
-    <input type="checkbox" name="involvement" value="Played"> Played
-    <input type="checkbox" name="involvement" value="Attended"> Attended
-    <input type="checkbox" name="involvement" value="Coached"> Coached
-    <input type="checkbox" name="involvement" value="Bet"> Bet
+    <section class="exposure">
+      <br>
+      <b><label for="exposure">Exposure:</label></b><br>
+      <input type="checkbox" name="exposure" id="played" value="played">
+      <label for="played">Played</label><br>
+      <input type="checkbox" name="exposure" id="trained" value="trained">
+      <label for="trained">Trained in</label><br>
+      <input type="checkbox" name="exposure" id="injured" value="injured">
+      <label for="injured">Injured in</label><br>
+      <input type="checkbox" name="exposure" id="retired" value="retired">
+      <label for="retired">Retired</label><br>
+      <input type="checkbox" name="exposure" id="attended" value="attended">
+      <label for="attended">Attended</label><br>
+      <input type="checkbox" name="exposure" id="coached" value="coached">
+      <label for="coached">Coached</label><br>
+      <input type="checkbox" name="exposure" id="bet" value="bet">
+      <label for="bet">Bet on</label>
+    </section>
 
-    <input type="radio" name="level" value="amateur"> Amateur
-    <input type="radio" name="level" value="college"> College
-    <input type="radio" name="level" value="pro"> Professional
-
-    <input type="submit">
+    <section class="preference"><br>
+      <b><label for="preference">Preference:</label></b><br>
+      <input type="radio" id="preference" name="preference" value="amateur">
+      <label for="coached">Amateur</label><br>
+      <input type="radio" id="preference" name="preference" value="college">
+      <label for="coached">College</label><br>
+      <input type="radio" id="preference" name="preference" value="pro">
+      <label for="coached">Professional</label><br>
+      <input type="radio" id="preference" name="preference" value="underground">
+      <label for="underground">Underground</label><br>
+    </section><br>
+    <input type="submit" value="Submit Profile">
   </form>
 </body>
 
